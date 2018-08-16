@@ -1,0 +1,34 @@
+.buy-body {
+    margin: {
+        top: 1%;
+    }
+    padding: {
+        bottom: 2%;
+    }
+    height:800px;
+    width:100%;
+    background:transparent;
+    & .buy-header {
+        background: url(../images/bg1.jpg);
+        text-align: left;
+        padding: 1% 2%;
+        & h2 {
+            color: $nav-color;
+            font: {
+                size: 40px;
+                weight: bolder;
+            }
+        }
+        & h4 {
+            color: white;
+            font: {
+                size: 30px;
+                weight: lighter;
+            }
+        }
+    }
+}
+
+.right {
+    text-align: right;
+}

@@ -1,0 +1,87 @@
+//Modal
+#myModal {
+    background: transparent;
+    & .modal-body .form div input[type="text"],
+    .select {
+        background: transparent;
+        width: 100%;
+        height: 45px;
+        border: 2px solid $footer-color;
+        padding-left: 2%;
+        border-radius: 3px;
+    }
+    transition:0.5s all ease-in-out;
+}
+
+#myModal {
+    & .modal-body .form div input[type="password"] {
+        background: transparent;
+        width: 100%;
+        height: 45px;
+        border: 2px solid $footer-color;
+        padding-left: 2%;
+        border-radius: 3px;
+        transition: 0.5s all ease-in-out;
+    }
+    & .modal-body .form div input[type="password"]:hover,
+    .modal-body .form div .select:hover,
+    .modal-body .form div input[type="password"]:focus,
+    .modal-body .form div .select:focus {
+        box-shadow: none;
+        border: 2px solid $nav-color;
+        opacity: 0.8;
+        transition: 0.5s all ease-in-out;
+    }
+    & .modal-body .form div input[type="email"] {
+        background: transparent;
+        width: 100%;
+        height: 45px;
+        border: 2px solid $footer-color;
+        padding-left: 2%;
+        border-radius: 3px;
+        transition: 0.5s all ease-in-out;
+    }
+    & .modal-body .form div input[type="email"]:hover,
+    .modal-body .form div input[type="email"]:focus {
+        box-shadow: none;
+        border: 2px solid $nav-color;
+        opacity: 0.8;
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+#regModal {
+    @extend #myModal;
+}
+
+#myModal .modal-body .form div input[type="text"]:hover {
+    box-shadow: none;
+    border: 2px solid $nav-color;
+    opacity: 0.8;
+}
+
+#myModal .modal-body .form div input[type="text"]:focus {
+    box-shadow: none;
+    border: 2px solid $nav-color;
+    transition: 0.5s all ease;
+}
+
+.modal-body .form div .select {
+    box-shadow: 0;
+    &:focus {
+        box-shadow: 0;
+    }
+    & option {
+        color: $nav-color;
+        background: white;
+        font-weight: bolder;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        transition: 0.2s all ease-in-out;
+        &[selected] {
+            color: white;
+            background: $nav-color;
+            transition: 0.2s all ease-in-out;
+        }
+    }
+}

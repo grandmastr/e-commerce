@@ -1,0 +1,158 @@
+.login-header {
+    padding-top:2%;
+    width: 100%;
+    height: auto;
+    & h4 {
+        color: $nav-color;
+        text-align:center;
+        font: {
+            size: 45px;
+            weight: bolder;
+        }
+    }
+}
+
+.register-header {
+    @extend .login-header;
+}
+.store-log-sign-body{
+	background:url(../images/store-log-bac.jpg) no-repeat;
+    background-size: cover;
+}
+.log-sign-body{	
+    background:url(../images/log-back.jpg) no-repeat;
+    background-size: cover;
+}
+.login-body {
+    height: auto;
+    width: 100%;
+    margin-top: -5%;
+    padding: {
+        top: 8%;
+        bottom: 8%;
+    }
+    & .form div input[type="text"],
+    .select {
+        background: transparent;
+        width: 100%;
+        height: 45px;
+        border: 2px solid $footer-color;
+        padding-left: 2%;
+        border-radius: 3px;
+    }
+    & .form div input[type="password"] {
+        background: transparent;
+        width: 100%;
+        height: 45px;
+        border: 2px solid $footer-color;
+        padding-left: 2%;
+        border-radius: 3px;
+        transition: 0.5s all ease-in-out;
+    }
+    & .form div input[type="password"]:hover,
+    .form div .select:hover,
+    .form div input[type="password"]:focus,
+    .form div .select:focus {
+        box-shadow: none;
+        border: 2px solid $nav-color;
+        opacity: 0.8;
+        transition: 0.5s all ease-in-out;
+    }
+    & .form div input[type="text"]:hover {
+        box-shadow: none;
+        border: 2px solid $nav-color;
+        opacity: 0.8;
+    }
+    .form div input[type="text"]:focus {
+        box-shadow: none;
+        border: 2px solid $nav-color;
+        transition: 0.5s all ease;
+    }
+    transition:0.5s all ease-in-out;
+    .form div .select {
+        box-shadow: 0;
+        &:focus {
+            box-shadow: 0;
+        }
+        & option {
+            color: $nav-color;
+            background: white;
+            font-weight: bolder;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            transition: 0.2s all ease-in-out;
+            &[selected] {
+                color: white;
+                background: $nav-color;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+    }
+    & .form div input[type="email"]{
+        background: transparent;
+        width: 100%;
+        height: 45px;
+        border: 2px solid $footer-color;
+        padding-left: 2%;
+        border-radius: 3px;
+        transition: 0.5s all ease-in-out;
+    }
+    & .form div input[type="email"]:hover,
+    .form div input[type="email"]:focus {
+        box-shadow: none;
+        border: 2px solid $nav-color;
+        opacity: 0.8;
+        transition: 0.5s all ease-in-out;
+    }
+    .social-login {
+        margin-bottom:1%;
+    }
+}
+
+.main-l-body {
+	background:white;
+    box-shadow: 0 0 20px $nav-color;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: 0.4s all ease-in-out;
+    border-radius: 4px;
+    &:hover {
+        box-shadow: 0 0 25px $nav-color;
+        transition: 0.4s all ease;
+    }
+    & h3{
+    	color:$nav-color;
+    	text-align: center;
+    	font:{
+    		weight:bold;
+    		size:20px;
+    		family:serif;
+    	}
+    	&::before,&::after{
+    		background-color:$nav-color;
+			content: "";
+			display: inline-block;
+			height: 1px;
+			position: relative;
+			vertical-align: middle;
+  			width: 45%;
+  			@media only screen and (max-width:800px){
+  				width:40%;
+  			}
+    	}
+    	&::before{
+    		right: 0.5em;
+  			margin-left: -38%;
+    	}
+    	&::after{
+    		left: 0.5em;
+  			margin-right: -37%;
+    	}
+    }
+}
+
+.register-body {
+    @extend .login-body;
+}
+
+@media only screen and (min-width:801px) {}

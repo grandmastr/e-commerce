@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.autoSave": "off",
+    "editor.fontSize": 14,
+    "editor.cursorStyle": "underline-thin"
+}
